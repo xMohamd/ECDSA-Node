@@ -2,7 +2,6 @@ const yargs = require('yargs/yargs');
 const {hideBin} = require('yargs/helpers');
 const secp = require("ethereum-cryptography/secp256k1");
 const { toHex } = require("ethereum-cryptography/utils");
-const { hide } = require('yargs');
 
 let args = yargs(hideBin(process.argv))
     .option('private_key', {

@@ -7,7 +7,7 @@ function extractPublicKey(fullKey){
     return toHex(kec.slice(kec.length - 20, kec.length));
 }
 
-function verifySignature(sign,msg,pubKey){
+function verifySignature(sig,msg,pubKey){
     const msgHash = keccak256(utf8ToBytes(msg));
     let actualSignature = sig.slice(0,sig.length - 1);
     let recoveryBit = parseInt(sig[sig.length - 1]);

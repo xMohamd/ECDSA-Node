@@ -1,6 +1,6 @@
 const secp = require("ethereum-cryptography/secp256k1");
 const { toHex } = require("ethereum-cryptography/utils");
-const { extractPublicKey } = require("../service");
+const { extractPublicKey } = require("../services");
 
 let privateKey = secp.utils.randomPrivateKey();
 let pubKey = secp.getPublicKey(privateKey);
